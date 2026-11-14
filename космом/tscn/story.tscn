@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://x038eatbqjih"]
 
-[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://1794645875819.jpg" id="1_27gb3"]
+[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://Wallpapers/1794645875819.jpg" id="1_27gb3"]
 [ext_resource type="Script" uid="uid://ciumyxbkkmxl7" path="res://story_text.gd" id="2_bwkhw"]
 [ext_resource type="Script" uid="uid://8t3dn4yt6w3q" path="res://next.gd" id="3_bwkhw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cpdt8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ra1sj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p6scp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_olkwg"]
 
 [node name="Story" type="Control" unique_id=1723676753]
 layout_mode = 3
@@ -13,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1739919387]
-position = Vector2(433.00003, 365)
+position = Vector2(400.00003, 362)
 scale = Vector2(1.0517677, 1.0848215)
 texture = ExtResource("1_27gb3")
 
@@ -57,7 +65,11 @@ offset_top = 583.0
 offset_right = 1137.0
 offset_bottom = 628.0
 theme_override_font_sizes/font_size = 27
-text = "Next"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cpdt8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ra1sj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_p6scp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_olkwg")
+text = "next"
 script = ExtResource("3_bwkhw")
 
 [connection signal="pressed" from="next" to="StoryText" method="_on_next_pressed"]
