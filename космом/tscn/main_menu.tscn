@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://x8komhx7yoy2"]
+
+[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://Wallpapers/1794645875819.jpg" id="1_fu7sn"]
+[ext_resource type="FontFile" uid="uid://b37tywhdf11wp" path="res://fonts/BBHBogle-Regular.ttf" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://fuqka0uap5lb" path="res://Wallpapers/1794661775519.png" id="3_glbon"]
+[ext_resource type="Script" uid="uid://2kyg5ks84i8x" path="res://play.gd" id="3_jix8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifdhf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ysejp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0ccw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2jpr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v042m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wu76d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_av7lm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vylfu"]
+
+[node name="MainMenu" type="Control" unique_id=685476196]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -336.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1794645875819" type="Sprite2D" parent="." unique_id=519668950]
+position = Vector2(416.00003, 357)
+scale = Vector2(1.0517677, 1.0848215)
+texture = ExtResource("1_fu7sn")
+
+[node name="Label" type="Label" parent="." unique_id=1372819872]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 103.0
+offset_right = 1039.0
+offset_bottom = 295.0
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 160
+text = "no way home"
+
+[node name="Play" type="Button" parent="." unique_id=1899643049]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 313.0
+offset_right = 683.0
+offset_bottom = 360.0
+theme_override_colors/font_hover_color = Color(0.6862745, 0.98039216, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ifdhf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ysejp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_g0ccw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_u2jpr")
+text = "Play"
+script = ExtResource("3_jix8l")
+
+[node name="Exit" type="Button" parent="." unique_id=2061135445]
+layout_mode = 0
+offset_left = 407.0
+offset_top = 371.0
+offset_right = 685.0
+offset_bottom = 418.0
+theme_override_colors/font_hover_color = Color(0.6862745, 0.98039216, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v042m")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wu76d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_av7lm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_vylfu")
+text = "Exit"
+
+[node name="1794661775519" type="Sprite2D" parent="." unique_id=257381770]
+position = Vector2(431.99997, 373)
+scale = Vector2(1.0918561, 1.1220238)
+texture = ExtResource("3_glbon")
+
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
