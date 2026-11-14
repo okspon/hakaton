@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://dfd7iphgfgmrp"]
 
-[ext_resource type="Script" uid="uid://burgwx1bue3wh" path="res://game_scene_1.gd" id="1_3pfi2"]
+[ext_resource type="Script" uid="uid://burgwx1bue3wh" path="res://code/game_scene_1.gd" id="1_3pfi2"]
 [ext_resource type="Texture2D" uid="uid://cksnojs532pws" path="res://Gemini_Generated_Image_nfjs6unfjs6unfjs.jpg" id="1_a34bk"]
 [ext_resource type="Texture2D" uid="uid://x5fcweke2ktn" path="res://ю.png" id="2_3pfi2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3pfi2"]
 resource_local_to_scene = true
-load_path = "res://.godot/imported/1794669603979.png-298c231b82d4313154e7e0ed2a0e9f7d.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
 size = Vector2(131, 91)
@@ -43,7 +42,7 @@ stretch_mode = 0
 [node name="Area2D" type="Area2D" parent="." unique_id=445408640]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=940328491]
-position = Vector2(1003, 529)
+position = Vector2(1016, 497)
 shape = SubResource("RectangleShape2D_4kxuq")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=866747431]
