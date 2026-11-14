@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://1794645875819.jpg" id="1_27gb3"]
 [ext_resource type="Script" uid="uid://ciumyxbkkmxl7" path="res://story_text.gd" id="2_bwkhw"]
+[ext_resource type="Script" uid="uid://8t3dn4yt6w3q" path="res://next.gd" id="3_bwkhw"]
 
 [node name="Story" type="Control" unique_id=1723676753]
 layout_mode = 3
@@ -49,7 +50,7 @@ and you have to make it back before it starts.
 horizontal_alignment = 1
 script = ExtResource("2_bwkhw")
 
-[node name="Button" type="Button" parent="." unique_id=1026355541]
+[node name="next" type="Button" parent="." unique_id=1026355541]
 layout_mode = 0
 offset_left = 971.0
 offset_top = 583.0
@@ -57,3 +58,7 @@ offset_right = 1137.0
 offset_bottom = 628.0
 theme_override_font_sizes/font_size = 27
 text = "Next"
+script = ExtResource("3_bwkhw")
+
+[connection signal="pressed" from="next" to="StoryText" method="_on_next_pressed"]
+[connection signal="pressed" from="next" to="next" method="_on_pressed"]
