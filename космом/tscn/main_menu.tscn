@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://x8komhx7yoy2"]
 
-[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://Wallpapers/1794645875819.jpg" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://1794645875819.jpg" id="1_fu7sn"]
 [ext_resource type="FontFile" uid="uid://b37tywhdf11wp" path="res://fonts/BBHBogle-Regular.ttf" id="2_jix8l"]
-[ext_resource type="Texture2D" uid="uid://fuqka0uap5lb" path="res://Wallpapers/1794661775519.png" id="3_glbon"]
-[ext_resource type="Script" uid="uid://2kyg5ks84i8x" path="res://code/play.gd" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://fuqka0uap5lb" path="res://1794661775519.png" id="3_glbon"]
+[ext_resource type="Script" uid="uid://2kyg5ks84i8x" path="res://play.gd" id="3_jix8l"]
 
 [node name="MainMenu" type="Control" unique_id=685476196]
 layout_mode = 3
@@ -13,7 +13,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="mainWall" type="Sprite2D" parent="." unique_id=519668950]
+[node name="1794645875819" type="Sprite2D" parent="." unique_id=519668950]
 position = Vector2(433.00003, 365)
 scale = Vector2(1.0517677, 1.0848215)
 texture = ExtResource("1_fu7sn")
@@ -47,7 +47,7 @@ offset_bottom = 418.0
 theme_override_font_sizes/font_size = 27
 text = "Exit"
 
-[node name="SecondaryWall" type="Sprite2D" parent="." unique_id=257381770]
+[node name="1794661775519" type="Sprite2D" parent="." unique_id=257381770]
 position = Vector2(431.99997, 373)
 scale = Vector2(1.0918561, 1.1220238)
 texture = ExtResource("3_glbon")
