@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://x038eatbqjih"]
+
+[ext_resource type="Texture2D" uid="uid://l3mxcagnufpn" path="res://1794645875819.jpg" id="1_27gb3"]
+[ext_resource type="Script" uid="uid://ciumyxbkkmxl7" path="res://story_text.gd" id="2_bwkhw"]
+
+[node name="Story" type="Control" unique_id=1723676753]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1739919387]
+position = Vector2(433.00003, 365)
+scale = Vector2(1.0517677, 1.0848215)
+texture = ExtResource("1_27gb3")
+
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=86551207]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5647059)
+
+[node name="StoryText" type="Label" parent="." unique_id=1305638146]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -514.0
+offset_top = -107.0
+offset_right = 514.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "When an unknown virus breaks loose at the colony on planet Q-5076c, 
+the base residents are in dire need of supplies.
+You were chosen as the one in charge of delivering the cargo to those affected by the incident. 
+The job must take about a week to complete, but no time can be wasted - there is a meteor storm coming, 
+and you have to make it back before it starts.
+
+"
+horizontal_alignment = 1
+script = ExtResource("2_bwkhw")
+
+[node name="Button" type="Button" parent="." unique_id=1026355541]
+layout_mode = 0
+offset_left = 971.0
+offset_top = 583.0
+offset_right = 1137.0
+offset_bottom = 628.0
+theme_override_font_sizes/font_size = 27
+text = "Next"
