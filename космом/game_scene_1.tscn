@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bdtf52igm8wve"]
 
 [ext_resource type="Script" uid="uid://burgwx1bue3wh" path="res://code/game_scene_1.gd" id="1_3pfi2"]
-[ext_resource type="Texture2D" uid="uid://cksnojs532pws" path="res://Gemini_Generated_Image_nfjs6unfjs6unfjs.jpg" id="1_a34bk"]
 [ext_resource type="Texture2D" uid="uid://x5fcweke2ktn" path="res://subject/ю.png" id="2_3pfi2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3pfi2"]
@@ -19,7 +18,6 @@ script = ExtResource("1_3pfi2")
 [node name="Background" type="TextureRect" parent="." unique_id=283221797]
 offset_right = 1586.0
 offset_bottom = 672.0
-texture = ExtResource("1_a34bk")
 
 [node name="ItemButton" type="TextureButton" parent="." unique_id=1940479356]
 visible = false
