@@ -57,8 +57,9 @@ shape = SubResource("RectangleShape2D_fg8lg")
 position = Vector2(21, 355)
 shape = SubResource("RectangleShape2D_dsfoa")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1989486101]
+[node name="Area2D" type="Area2D" parent="." unique_id=1989486101 node_paths=PackedStringArray("player")]
 script = ExtResource("5_v042m")
+player = NodePath("../CharacterBody2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=298811403]
 position = Vector2(835, 505)
