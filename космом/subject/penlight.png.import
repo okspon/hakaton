@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmqrut0a1xhyx"
-path="res://.godot/imported/1794645875819.jpg-442e418064dab818a19055d488f77678.ctex"
+uid="uid://c8lbe2rwjd0ha"
+path="res://.godot/imported/penlight.png-a9cc9ab9978bae4606bd66cbda826e2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://1794645875819.jpg"
-dest_files=["res://.godot/imported/1794645875819.jpg-442e418064dab818a19055d488f77678.ctex"]
+source_file="res://subject/penlight.png"
+dest_files=["res://.godot/imported/penlight.png-a9cc9ab9978bae4606bd66cbda826e2f.ctex"]
 
 [params]
 

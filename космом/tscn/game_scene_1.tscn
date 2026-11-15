@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cksnojs532pws" path="res://Gemini_Generated_Image_nfjs6unfjs6unfjs.jpg" id="1_a34bk"]
 [ext_resource type="Script" uid="uid://dbjsef34kelyu" path="res://tscn/character_body_2d.gd" id="3_dsfoa"]
 [ext_resource type="Texture2D" uid="uid://by7lbvccoghmp" path="res://main_player/Untitled27_Restored_20261114145512-removebg-preview.png" id="4_ifdhf"]
+[ext_resource type="Texture2D" uid="uid://jifju3vowwfw" path="res://subject/TR.png" id="5_ifdhf"]
+[ext_resource type="Script" uid="uid://dvran4oxk3slo" path="res://tscn/area_2d.gd" id="5_v042m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fg8lg"]
 radius = 101.61
@@ -14,6 +16,10 @@ size = Vector2(30.5, 724)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dsfoa"]
 size = Vector2(52, 817)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a0unn"]
+radius = 66.0
+height = 132.0
 
 [node name="Game_scene1" type="Node2D" unique_id=1380227353]
 script = ExtResource("1_3pfi2")
@@ -50,3 +56,15 @@ shape = SubResource("RectangleShape2D_fg8lg")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1109850505]
 position = Vector2(21, 355)
 shape = SubResource("RectangleShape2D_dsfoa")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1989486101]
+script = ExtResource("5_v042m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=298811403]
+position = Vector2(835, 505)
+shape = SubResource("CapsuleShape2D_a0unn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=110344646]
+position = Vector2(834.75, 508.75)
+scale = Vector2(0.05395508, 0.049560547)
+texture = ExtResource("5_ifdhf")

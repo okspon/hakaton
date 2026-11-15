@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb44fyn7fc1of"
-path="res://.godot/imported/O2(2).png-2dd5b6f0c8367926cd3542422e35b288.ctex"
+uid="uid://3yqgpctgit1n"
+path="res://.godot/imported/scaner.png-83033a5c89be6abd78da572f784c0150.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://O2(2).png"
-dest_files=["res://.godot/imported/O2(2).png-2dd5b6f0c8367926cd3542422e35b288.ctex"]
+source_file="res://subject/scaner.png"
+dest_files=["res://.godot/imported/scaner.png-83033a5c89be6abd78da572f784c0150.ctex"]
 
 [params]
 
