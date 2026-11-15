@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bdtf52igm8wve"]
+
+[ext_resource type="Script" uid="uid://burgwx1bue3wh" path="res://code/game_scene_1.gd" id="1_3pfi2"]
+[ext_resource type="Texture2D" uid="uid://cksnojs532pws" path="res://Gemini_Generated_Image_nfjs6unfjs6unfjs.jpg" id="1_a34bk"]
+[ext_resource type="Texture2D" uid="uid://x5fcweke2ktn" path="res://subject/ю.png" id="2_3pfi2"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3pfi2"]
+resource_local_to_scene = true
+load_path = "res://.godot/imported/1794669603979.png-298c231b82d4313154e7e0ed2a0e9f7d.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(131, 91)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4kxuq"]
+
+[node name="Game_scene1" type="Node2D" unique_id=1380227353]
+script = ExtResource("1_3pfi2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=283221797]
+offset_right = 1586.0
+offset_bottom = 672.0
+texture = ExtResource("1_a34bk")
+
+[node name="ItemButton" type="TextureButton" parent="." unique_id=1940479356]
+visible = false
+offset_left = 1032.0
+offset_top = 476.0
+offset_right = 3080.0
+offset_bottom = 2524.0
+scale = Vector2(0.0609789, 0.051198952)
+
+[node name="LockerButton" type="TextureButton" parent="." unique_id=867582442]
+offset_right = 1586.0
+offset_bottom = 672.0
+texture_normal = SubResource("CompressedTexture2D_3pfi2")
+texture_pressed = ExtResource("2_3pfi2")
+texture_hover = ExtResource("2_3pfi2")
+texture_disabled = ExtResource("2_3pfi2")
+texture_focused = ExtResource("2_3pfi2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=445408640]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=940328491]
+position = Vector2(1003, 529)
+shape = SubResource("RectangleShape2D_4kxuq")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=866747431]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=576571211]
+sprite_frames = SubResource("SpriteFrames_4kxuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=604707881]
+
+[connection signal="pressed" from="ItemButton" to="." method="_on_item_button_pressed"]
+[connection signal="pressed" from="LockerButton" to="." method="_on_locker_button_pressed"]
+[connection signal="pressed" from="LockerButton" to="LockerButton" method="_on_pressed"]
