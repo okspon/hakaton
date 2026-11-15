@@ -1,0 +1,228 @@
+[gd_scene format=3 uid="uid://bwa0jxd2h7erl"]
+
+[ext_resource type="Texture2D" uid="uid://do24qoy46j1rs" path="res://Gemini_Generated_Image_iq27l0iq27l0iq27.png" id="1_d12i8"]
+[ext_resource type="Texture2D" uid="uid://g2k7eylpmkol" path="res://Футуристичний зореліт із блакитними двигунами.png" id="2_1w4vp"]
+[ext_resource type="Script" uid="uid://dtqbwueyh4hh6" path="res://animation_player.gd" id="4_xcbtk"]
+[ext_resource type="Texture2D" uid="uid://celqxil5rydts" path="res://Gemini_Generated_Image_5a7cpm5a7cpm5a7c-removebg-preview.png" id="5_ww087"]
+
+[sub_resource type="Animation" id="Animation_hlnjj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1742.0001, 707)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ship:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.17536758, 0.19236164)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Meteor:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1153, -42.99997)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Meteor:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.24600022, 0.24600022)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Meteor:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.025645]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BlackScreen:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_te8qo"]
+resource_name = "fly"
+length = 6.0
+step = 3.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1742.0001, 707), Vector2(582, 330.99997)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Ship:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.17536758, 0.19236164)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Meteor:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.4, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1153, -42.99997), Vector2(740, 322)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Meteor:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.4),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.24600022, 0.24600022)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Meteor:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.37, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.025645, -6.2831855]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BlackScreen:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5, 5.5049996),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xcbtk"]
+resource_name = "new_animation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ww087"]
+_data = {
+&"RESET": SubResource("Animation_hlnjj"),
+&"fly": SubResource("Animation_te8qo"),
+&"new_animation": SubResource("Animation_xcbtk")
+}
+
+[node name="Control" type="Control" unique_id=1821971697]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpaceBackground" type="Sprite2D" parent="." unique_id=945313601]
+position = Vector2(802.50006, 331.00003)
+scale = Vector2(0.581032, 0.45963544)
+texture = ExtResource("1_d12i8")
+
+[node name="Ship" type="Sprite2D" parent="." unique_id=696964653]
+position = Vector2(1742.0001, 707)
+rotation = 0.09292436
+scale = Vector2(0.17536758, 0.19236164)
+texture = ExtResource("2_1w4vp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1511170590]
+libraries/ = SubResource("AnimationLibrary_ww087")
+autoplay = &"fly"
+script = ExtResource("4_xcbtk")
+
+[node name="Meteor" type="Sprite2D" parent="." unique_id=341422411]
+position = Vector2(1153, -42.99997)
+rotation = 2.025645
+scale = Vector2(0.24600022, 0.24600022)
+texture = ExtResource("5_ww087")
+
+[node name="BlackScreen" type="ColorRect" parent="." unique_id=274175187]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -19.999998
+offset_top = -31.999998
+offset_right = 20.000002
+offset_bottom = 8.000002
+scale = Vector2(40.78808, 19.195835)
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="BlackScreen" unique_id=945414829]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -6.5
+offset_right = 17.5
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5662535, 0, 0.07886011, 1)
+theme_override_font_sizes/font_size = 9
+text = "АВАРІЯ!"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="SpaceBackground" method="_on_animation_player_animation_finished"]
