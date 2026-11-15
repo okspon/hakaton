@@ -1,0 +1,12 @@
+Label
+ColorRect
+Sprite2D
+AnimationPlayer
+CollisionShape2D
+AnimatedSprite2D
+CharacterBody2D
+Area2D
+TextureButton
+TextureRect
+Button
+Control

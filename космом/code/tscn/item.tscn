@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dtc84ofmoc6ga"]
+
+[ext_resource type="Script" uid="uid://dvran4oxk3slo" path="res://tscn/area_2d.gd" id="1_pw8kr"]
+[ext_resource type="Texture2D" uid="uid://jifju3vowwfw" path="res://subject/TR.png" id="2_hy0w1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a0unn"]
+radius = 66.0
+height = 132.0
+
+[node name="Area2D" type="Area2D" unique_id=207751983]
+position = Vector2(867, 456)
+script = ExtResource("1_pw8kr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=385597645]
+scale = Vector2(0.05395508, 0.049560547)
+texture = ExtResource("2_hy0w1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1033010686]
+shape = SubResource("CapsuleShape2D_a0unn")
+
+[node name="PickupLabel" type="Label" parent="." unique_id=1218468518]
+visible = false
+offset_left = 113.0
+offset_top = -120.0
+offset_right = 268.0
+offset_bottom = -97.0
+text = "Click LMB to pick up"
